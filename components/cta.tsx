@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Stripes from "@/public/images/stripes-dark.svg";
 
 export default function Cta() {
   return (
@@ -16,31 +15,33 @@ export default function Cta() {
           >
             <div className="h-56 w-[480px] rounded-full border-[20px] border-blue-500 blur-3xl" />
           </div>
-          {/* Stripes illustration */}
-          <div
-            className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 transform"
-            aria-hidden="true"
-          >
-            <Image
-              className="max-w-none"
-              src={Stripes}
-              width={768}
-              height={432}
-              alt="Stripes"
-            />
-          </div>
+          
           <div className="px-4 py-12 md:px-12 md:py-20">
             <h2 className="mb-6 border-y text-3xl font-bold text-gray-200 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-700/.7),transparent)1] md:mb-12 md:text-4xl">
-              Create your next project with Simple
+              ¿Listo para comenzar tu próximo proyecto?
             </h2>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-400">
+              Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus objetivos de construcción con soluciones integrales y profesionales.
+            </p>
+            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center sm:space-x-4">
               <a
                 className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="#0"
+                href="#contacto"
               >
                 <span className="relative inline-flex items-center">
-                  Start Free Trial{" "}
+                  Solicitar Cotización{" "}
                   <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
+                    -&gt;
+                  </span>
+                </span>
+              </a>
+              <a
+                className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:w-auto"
+                href="tel:+56912345678"
+              >
+                <span className="relative inline-flex items-center">
+                  Llamar Ahora{" "}
+                  <span className="ml-1 tracking-normal text-gray-400 transition-transform group-hover:translate-x-0.5">
                     -&gt;
                   </span>
                 </span>

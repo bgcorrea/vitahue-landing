@@ -1,301 +1,80 @@
 import Image from "next/image";
-import Logo01 from "@/public/images/logo-01.svg";
-import Logo02 from "@/public/images/logo-02.svg";
-import Logo03 from "@/public/images/logo-03.svg";
-import Logo04 from "@/public/images/logo-04.svg";
-import Logo05 from "@/public/images/logo-05.svg";
-import Logo06 from "@/public/images/logo-06.svg";
-import Logo07 from "@/public/images/logo-07.svg";
-import Logo08 from "@/public/images/logo-08.svg";
-import Logo09 from "@/public/images/logo-09.svg";
 
 export default function BusinessCategories() {
   return (
-    <section>
+    <section id="servicios" className="bg-gray-50 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="pb-12 md:pb-20">
-          {/* Tab panels */}
-          <div className="relative flex h-[324px] items-center justify-center">
-            {/* Small blue dots */}
-            <div className="absolute -z-10">
-              <svg
-                className="fill-blue-500"
-                xmlns="http://www.w3.org/2000/svg"
-                width={164}
-                height={41}
-                viewBox="0 0 164 41"
-                fill="none"
-              >
-                <circle cx={1} cy={8} r={1} fillOpacity="0.24" />
-                <circle cx={1} cy={1} r={1} fillOpacity="0.16" />
-                <circle cx={1} cy={15} r={1} />
-                <circle cx={1} cy={26} r={1} fillOpacity="0.64" />
-                <circle cx={1} cy={33} r={1} fillOpacity="0.24" />
-                <circle cx={8} cy={8} r={1} />
-                <circle cx={8} cy={15} r={1} />
-                <circle cx={8} cy={26} r={1} fillOpacity="0.24" />
-                <circle cx={15} cy={15} r={1} fillOpacity="0.64" />
-                <circle cx={15} cy={26} r={1} fillOpacity="0.16" />
-                <circle cx={8} cy={33} r={1} />
-                <circle cx={1} cy={40} r={1} />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 7)"
-                  fillOpacity="0.24"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 0)"
-                  fillOpacity="0.16"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 14)"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 25)"
-                  fillOpacity="0.64"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 32)"
-                  fillOpacity="0.24"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 157 7)"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 157 14)"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 157 25)"
-                  fillOpacity="0.24"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 150 14)"
-                  fillOpacity="0.64"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 150 25)"
-                  fillOpacity="0.16"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 157 32)"
-                />
-                <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
-                  transform="matrix(-1 0 0 1 164 39)"
-                />
+        <div className="text-center pb-12 md:pb-20">
+          <h2 className="h2 mb-4">Nuestros Servicios</h2>
+          <p className="text-xl text-gray-600">Soluciones integrales para tu proyecto de construcción</p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Áridos */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
-            {/* Blue glow */}
-            <div className="absolute -z-10">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={432}
-                height={160}
-                viewBox="0 0 432 160"
-                fill="none"
-              >
-                <g opacity="0.6" filter="url(#filter0_f_2044_9)">
-                  <path
-                    className="fill-blue-500"
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M80 112C62.3269 112 48 97.6731 48 80C48 62.3269 62.3269 48 80 48C97.6731 48 171 62.3269 171 80C171 97.6731 97.6731 112 80 112ZM352 112C369.673 112 384 97.6731 384 80C384 62.3269 369.673 48 352 48C334.327 48 261 62.3269 261 80C261 97.6731 334.327 112 352 112Z"
-                  />
-                </g>
-                <defs>
-                  <filter
-                    id="filter0_f_2044_9"
-                    x={0}
-                    y={0}
-                    width={432}
-                    height={160}
-                    filterUnits="userSpaceOnUse"
-                    colorInterpolationFilters="sRGB"
-                  >
-                    <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                    <feBlend
-                      mode="normal"
-                      in="SourceGraphic"
-                      in2="BackgroundImageFix"
-                      result="shape"
-                    />
-                    <feGaussianBlur
-                      stdDeviation={32}
-                      result="effect1_foregroundBlur_2044_9"
-                    />
-                  </filter>
-                </defs>
-              </svg>
-            </div>
-            {/* Horizontal lines */}
-            <div className="absolute inset-x-0 top-0 -z-10 h-px bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-0 bottom-0 -z-10 h-px bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-[200px] top-1/2 -z-10 h-px bg-linear-to-r from-transparent via-blue-500/60 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-0 top-1/2 -z-10 h-px -translate-y-[82px] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply before:absolute before:inset-y-0 before:w-24 before:animate-[line_10s_ease-in-out_infinite_both] before:bg-linear-to-r before:via-blue-500"></div>
-            <div className="absolute inset-x-0 top-1/2 -z-10 h-px translate-y-[82px] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply before:absolute before:inset-y-0 before:w-24 before:animate-[line_10s_ease-in-out_infinite_5s_both] before:bg-linear-to-r before:via-blue-500"></div>
-            {/* Diagonal lines */}
-            <div className="absolute inset-x-[300px] top-1/2 -z-10 h-px rotate-[20deg] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-[300px] top-1/2 -z-10 h-px -rotate-[20deg] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            {/* Vertical lines */}
-            <div className="absolute inset-y-0 left-1/2 -z-10 w-px -translate-x-[216px] bg-linear-to-b from-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-y-0 left-1/2 -z-10 w-px translate-x-[216px] bg-linear-to-t from-gray-200 to-transparent mix-blend-multiply"></div>
-            {/* Logos */}
-            <div className="absolute before:absolute before:-inset-3 before:animate-[spin_3s_linear_infinite] before:rounded-full before:border before:border-transparent before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] before:[background:conic-gradient(from_180deg,transparent,var(--color-blue-500))_border-box]">
-              <div className="animate-[breath_8s_ease-in-out_infinite_both]">
-                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                  <Image
-                    className="relative"
-                    src={Logo01}
-                    width={32}
-                    height={32}
-                    alt="Logo 01"
-                  />
-                </div>
-              </div>
-            </div>
+            <h3 className="text-xl font-bold mb-2">Áridos</h3>
+            <p className="text-gray-600">Suministro de áridos de alta calidad para construcción y obras civiles.</p>
+          </div>
 
-            <div className="relative flex flex-col">
-              <article className="flex h-full w-full items-center justify-center focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-300">
-                <div className="absolute -translate-x-[136px]">
-                  <div className="animate-[breath_7s_ease-in-out_3s_infinite_both]">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo02}
-                        width={23}
-                        height={22}
-                        alt="Logo 02"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[136px]">
-                  <div className="animate-[breath_7s_ease-in-out_3.5s_infinite_both]">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo03}
-                        width={22}
-                        height={22}
-                        alt="Logo 03"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-x-[216px] -translate-y-[82px]">
-                  <div className="animate-[breath_6s_ease-in-out_3.5s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo04}
-                        width={24}
-                        height={22}
-                        alt="Logo 04"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-y-[82px] translate-x-[216px]">
-                  <div className="animate-[breath_6s_ease-in-out_1.5s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo05}
-                        width={25}
-                        height={25}
-                        alt="Logo 05"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[216px] translate-y-[82px]">
-                  <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo06}
-                        width={20}
-                        height={18}
-                        alt="Logo 06"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-x-[216px] translate-y-[82px]">
-                  <div className="animate-[breath_6s_ease-in-out_2.5s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <Image
-                        className="relative"
-                        src={Logo07}
-                        width={25}
-                        height={25}
-                        alt="Logo 07"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-x-[292px] opacity-40">
-                  <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
-                      <Image
-                        className="relative"
-                        src={Logo08}
-                        width={20}
-                        height={20}
-                        alt="Logo 08"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[292px] opacity-40">
-                  <div className="animate-[breath_6s_ease-in-out_4s_infinite_both]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
-                      <Image
-                        className="relative"
-                        src={Logo09}
-                        width={21}
-                        height={13}
-                        alt="Logo 09"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </article>
+          {/* Movimiento de Tierras */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+              </svg>
             </div>
+            <h3 className="text-xl font-bold mb-2">Movimiento de Tierras</h3>
+            <p className="text-gray-600">Servicios profesionales de excavación, nivelación y preparación de terrenos.</p>
+          </div>
+
+          {/* Arriendo de Maquinaria */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold mb-2">Arriendo de Maquinaria</h3>
+            <p className="text-gray-600">Amplia flota de maquinaria pesada disponible para arriendo con operadores calificados.</p>
+          </div>
+
+          {/* Transporte de Materiales */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold mb-2">Transporte de Materiales</h3>
+            <p className="text-gray-600">Servicio de transporte eficiente de materiales para obras y proyectos.</p>
+          </div>
+
+          {/* Asesoría Técnica */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold mb-2">Asesoría Técnica</h3>
+            <p className="text-gray-600">Consultoría especializada en proyectos de construcción y desarrollo de infraestructura.</p>
+          </div>
+
+          {/* Mantenimiento de Maquinaria */}
+          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-bold mb-2">Mantenimiento de Maquinaria</h3>
+            <p className="text-gray-600">Servicio técnico especializado para mantener tu maquinaria en óptimas condiciones.</p>
           </div>
         </div>
       </div>
