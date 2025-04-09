@@ -11,7 +11,7 @@ export default function HeroHome() {
           {/* Section header */}
           <div className="pb-12 text-center md:pb-16">
             <h1
-              className="mb-6 border-y text-5xl font-bold text-tierra-800 [border-image:linear-gradient(to_right,transparent,--theme(--color-tierra-300/.8),transparent)1] md:text-6xl"
+              className="mb-6 text-5xl font-bold text-tierra-800 md:text-6xl"
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
@@ -27,25 +27,25 @@ export default function HeroHome() {
                 Expertos en áridos, movimiento de tierras y arriendo de maquinaria pesada. 
                 Brindamos soluciones integrales para proyectos de construcción y desarrollo de infraestructura.
               </p>
-              <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-tierra-300/.8),transparent)1]">
+              <div>
                 <div
                   className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
                   <a
-                    className="btn group mb-4 w-full bg-cat-500 text-white shadow-lg hover:bg-cat-600 sm:mb-0 sm:w-auto"
+                    className="btn group mb-4 w-full bg-cat-500 text-tierra-900 font-bold shadow-lg hover:bg-cat-400 sm:mb-0 sm:w-auto"
                     href="#servicios"
                   >
                     <span className="relative inline-flex items-center">
                       Nuestros Servicios{" "}
-                      <span className="ml-1 tracking-normal text-white transition-transform group-hover:translate-x-0.5">
+                      <span className="ml-1 tracking-normal text-tierra-900 transition-transform group-hover:translate-x-0.5">
                         -&gt;
                       </span>
                     </span>
                   </a>
                   <a
-                    className="btn w-full bg-tierra-500 text-white shadow-lg hover:bg-tierra-600 sm:ml-4 sm:w-auto"
+                    className="btn w-full bg-cat-500 text-tierra-900 font-bold shadow-lg hover:bg-cat-400 sm:ml-4 sm:w-auto"
                     href="#contacto"
                   >
                     Contáctanos
