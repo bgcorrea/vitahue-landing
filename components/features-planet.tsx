@@ -8,22 +8,22 @@ import PlanetTagImg04 from "@/public/images/planet-tag-04.png";
 
 export default function FeaturesPlanet() {
   return (
-    <section className="relative bg-gray-900 py-20">
+    <section className="relative bg-tierra-800 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20">
-            <h2 className="text-3xl font-bold text-gray-200 md:text-4xl">
+            <h2 className="text-3xl font-bold text-white md:text-4xl">
               ¿Por qué elegir Vitahue?
             </h2>
           </div>
           
           {/* Grid */}
-          <div className="grid overflow-hidden sm:grid-cols-2 lg:grid-cols-3 *:relative *:p-6 *:before:absolute *:before:bg-gray-800 *:before:[block-size:100vh] *:before:[inline-size:1px] *:before:[inset-block-start:0] *:before:[inset-inline-start:-1px] *:after:absolute *:after:bg-gray-800 *:after:[block-size:1px] *:after:[inline-size:100vw] *:after:[inset-block-start:-1px] *:after:[inset-inline-start:0] md:*:p-10">
+          <div className="grid overflow-hidden sm:grid-cols-2 lg:grid-cols-3 *:relative *:p-6 *:before:absolute *:before:bg-tierra-700 *:before:[block-size:100vh] *:before:[inline-size:1px] *:before:[inset-block-start:0] *:before:[inset-inline-start:-1px] *:after:absolute *:after:bg-tierra-700 *:after:[block-size:1px] *:after:[inline-size:100vw] *:after:[inset-block-start:-1px] *:after:[inset-inline-start:0] md:*:p-10">
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
+              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-cat-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -32,15 +32,15 @@ export default function FeaturesPlanet() {
                 </svg>
                 <span>Experiencia Comprobada</span>
               </h3>
-              <p className="text-[15px] text-gray-400">
+              <p className="text-[15px] text-tierra-200">
                 Años de experiencia en el sector de la construcción y obras civiles, 
                 respaldados por un equipo de profesionales altamente calificados.
               </p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
+              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-cat-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -49,15 +49,15 @@ export default function FeaturesPlanet() {
                 </svg>
                 <span>Maquinaria Moderna</span>
               </h3>
-              <p className="text-[15px] text-gray-400">
+              <p className="text-[15px] text-tierra-200">
                 Flota de maquinaria pesada de última generación, 
                 mantenida en óptimas condiciones para garantizar el mejor rendimiento.
               </p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
+              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-cat-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -66,15 +66,15 @@ export default function FeaturesPlanet() {
                 </svg>
                 <span>Calidad Garantizada</span>
               </h3>
-              <p className="text-[15px] text-gray-400">
+              <p className="text-[15px] text-tierra-200">
                 Compromiso con la excelencia en todos nuestros servicios, 
                 cumpliendo con los más altos estándares de calidad y seguridad.
               </p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
+              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-cat-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -83,15 +83,15 @@ export default function FeaturesPlanet() {
                 </svg>
                 <span>Servicio Personalizado</span>
               </h3>
-              <p className="text-[15px] text-gray-400">
+              <p className="text-[15px] text-tierra-200">
                 Atención personalizada y soluciones adaptadas a las necesidades 
                 específicas de cada proyecto y cliente.
               </p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
+              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-cat-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -100,15 +100,15 @@ export default function FeaturesPlanet() {
                 </svg>
                 <span>Compromiso Ambiental</span>
               </h3>
-              <p className="text-[15px] text-gray-400">
+              <p className="text-[15px] text-tierra-200">
                 Desarrollo de operaciones con responsabilidad ambiental, 
                 implementando prácticas sostenibles en todos nuestros procesos.
               </p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
+              <h3 className="mb-2 flex items-center space-x-2 font-medium text-white">
                 <svg
-                  className="fill-blue-500"
+                  className="fill-cat-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={16}
                   height={16}
@@ -117,7 +117,7 @@ export default function FeaturesPlanet() {
                 </svg>
                 <span>Soporte 24/7</span>
               </h3>
-              <p className="text-[15px] text-gray-400">
+              <p className="text-[15px] text-tierra-200">
                 Disponibilidad y respuesta inmediata ante cualquier requerimiento 
                 o emergencia en tus proyectos.
               </p>
