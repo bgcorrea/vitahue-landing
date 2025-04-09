@@ -8,42 +8,54 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Colores base para el tema de construcción
-        'arena': {
-          50: '#faf6f2',
-          100: '#f5ede6',
-          200: '#ebd9cc',
-          300: '#e0c5b3',
-          400: '#d6b199',
-          500: '#cc9d80', // Color principal
-          600: '#c28966',
-          700: '#b8754d',
-          800: '#ae6133',
-          900: '#a44d1a',
+        // Colores base para el tema de construcción y maquinaria
+        'acero': {
+          50: '#f5f7f8',
+          100: '#e6eaed',
+          200: '#cbd5db',
+          300: '#a4b3bd',
+          400: '#778a97',
+          500: '#5c6b77', // Color principal - gris acero
+          600: '#4a5661',
+          700: '#3d464f',
+          800: '#333a41',
+          900: '#2c3137',
         },
-        'piedra': {
+        'tierra': {
+          50: '#f8f6f3',
+          100: '#ebe6e0',
+          200: '#d7cdc3',
+          300: '#bcaea0',
+          400: '#a08f7d',
+          500: '#8b7762', // Color principal - tierra natural
+          600: '#726251',
+          700: '#5e5043',
+          800: '#4e4238',
+          900: '#423830',
+        },
+        'maquinaria': {
+          50: '#f9f7f4',
+          100: '#f0e9e2',
+          200: '#e1d3c5',
+          300: '#cdb7a3',
+          400: '#b99b81',
+          500: '#a58466', // Color principal - naranja maquinaria
+          600: '#8c6d54',
+          700: '#745a46',
+          800: '#614b3c',
+          900: '#523f33',
+        },
+        'hormigon': {
           50: '#f7f7f7',
           100: '#e3e3e3',
           200: '#c8c8c8',
           300: '#a4a4a4',
           400: '#818181',
-          500: '#666666', // Color principal
+          500: '#666666', // Color principal - gris hormigón
           600: '#515151',
           700: '#434343',
           800: '#383838',
           900: '#313131',
-        },
-        'tierra': {
-          50: '#f5f3f0',
-          100: '#e6e2dd',
-          200: '#d0c7be',
-          300: '#b3a699',
-          400: '#968574',
-          500: '#7d6b5a', // Color principal
-          600: '#665748',
-          700: '#524639',
-          800: '#42372d',
-          900: '#362d25',
         },
       },
     },
