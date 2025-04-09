@@ -1,4 +1,5 @@
 "use client";
+import "../css/style.css"; // 👈 ruta relativa desde (default) a css
 
 import { useEffect } from "react";
 

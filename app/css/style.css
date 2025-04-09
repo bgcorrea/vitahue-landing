@@ -1,191 +1,97 @@
-@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Additional styles */
-@import './additional-styles/utility-patterns.css' layer(components);
+@import './additional-styles/utility-patterns.css';
 @import './additional-styles/theme.css';
 
-@plugin "@tailwindcss/forms" {
-  strategy: base;
-}
-
-@theme {
+/* Theme variables */
+:root {
   --font-inter: Inter, sans-serif;
   --font-mono: Roboto Mono, monospace;
+  --color-cat-100: #FFE5B4;
+  --color-cat-200: #FFD580;
+  --color-cat-300: #FFC966;
+  --color-cat-400: #FFB84D;
+  --color-cat-500: #FFA733;
+  --color-cat-600: #FF961A;
+  --color-cat-700: #FF8500;
+  --color-cat-800: #E67A00;
+  --color-cat-900: #CC6F00;
 
-  --text-xs: 0.75rem;
-  --text-xs--line-height: 1.5;
-  --text-sm: 0.875rem;
-  --text-sm--line-height: 1.5715;
-  --text-base: 1rem;
-  --text-base--line-height: 1.5;
-  --text-base--letter-spacing: -0.017em;
-  --text-lg: 1.125rem;
-  --text-lg--line-height: 1.5;
-  --text-lg--letter-spacing: -0.017em;
-  --text-xl: 1.25rem;
-  --text-xl--line-height: 1.5;
-  --text-xl--letter-spacing: -0.017em;
-  --text-2xl: 1.5rem;
-  --text-2xl--line-height: 1.415;
-  --text-2xl--letter-spacing: -0.037em;
-  --text-3xl: 1.875rem;
-  --text-3xl--line-height: 1.3333;
-  --text-3xl--letter-spacing: -0.037em;
-  --text-4xl: 2.25rem;
-  --text-4xl--line-height: 1.2777;
-  --text-4xl--letter-spacing: -0.037em;
-  --text-5xl: 3rem;
-  --text-5xl--line-height: 1;
-  --text-5xl--letter-spacing: -0.037em;
-  --text-6xl: 4rem;
-  --text-6xl--line-height: 1;
-  --text-6xl--letter-spacing: -0.037em;
-  --text-7xl: 4.5rem;
-  --text-7xl--line-height: 1;
-  --text-7xl--letter-spacing: -0.037em;
+  --color-tierra-100: #F5F5DC;
+  --color-tierra-200: #E8E4C9;
+  --color-tierra-300: #D2C9A3;
+  --color-tierra-400: #BCAE7D;
+  --color-tierra-500: #A69357;
+  --color-tierra-600: #907831;
+  --color-tierra-700: #7A5D0B;
+  --color-tierra-800: #644200;
+  --color-tierra-900: #4E2700;
+}
 
-  --animate-code-1: code-1;
-  --animate-code-2: code-2;
-  --animate-code-3: code-3;
-  --animate-code-4: code-4;
-  --animate-code-5: code-5;
-  --animate-code-6: code-6;
-  --animate-breath: breath;
-  --animate-float: float;
-  --animate-line: line;
-  --animate-infinite-scroll: infinite-scroll;  
+/* Animations */
+@keyframes code-1 {
+  0% { opacity: 0; }
+  2.5% { opacity: 1; }
+  97.5% { opacity: 1; }
+  100% { opacity: 0; }
+}
 
-  @keyframes code-1 {
-    0% {
-      opacity: 0;
-    }
-    2.5% {
-      opacity: 1;
-    }
-    97.5% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes code-2 {
-    16.2% {
-      opacity: 0;
-    }
-    18.75% {
-      opacity: 1;
-    }
-    97.5% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes code-3 {
-    32.5% {
-      opacity: 0;
-    }
-    35% {
-      opacity: 1;
-    }
-    97.5% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes code-4 {
-    48.75% {
-      opacity: 0;
-    }
-    51.25% {
-      opacity: 1;
-    }
-    97.5% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes code-5 {
-    65% {
-      opacity: 0;
-    }
-    72.5% {
-      opacity: 1;
-    }
-    97.5% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes code-6 {
-    81.25% {
-      opacity: 0;
-    }
-    83.75% {
-      opacity: 1;
-    }
-    97.5% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes breath {
-    0%,
-    100% {
-      transform: scale(0.95);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-  }
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5%);
-    }
-  }
-  @keyframes line {
-    0%,
-    100% {
-      left: 0;
-      opacity: 0;
-    }
-    50% {
-      left: 100%;
-      transform: translateX(-100%);
-    }
-    10%,
-    40%,
-    60%,
-    90% {
-      opacity: 0;
-    }
-    25%,
-    75% {
-      opacity: 1;
-    }
-  }
-  @keyframes infinite-scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
+@keyframes code-2 {
+  16.2% { opacity: 0; }
+  18.75% { opacity: 1; }
+  97.5% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes code-3 {
+  32.5% { opacity: 0; }
+  35% { opacity: 1; }
+  97.5% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes code-4 {
+  48.7% { opacity: 0; }
+  51.25% { opacity: 1; }
+  97.5% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes code-5 {
+  65% { opacity: 0; }
+  67.5% { opacity: 1; }
+  97.5% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes code-6 {
+  81.2% { opacity: 0; }
+  83.75% { opacity: 1; }
+  97.5% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes breath {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes line {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
 }
 
 /*
@@ -203,5 +109,25 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-cat-600 text-white px-6 py-2 rounded-lg hover:bg-cat-700 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-tierra-600 text-white px-6 py-2 rounded-lg hover:bg-tierra-700 transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }

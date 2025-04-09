@@ -5,7 +5,7 @@
 }
 
 .btn {
-    @apply px-4 py-[11px] shadow-lg;
+    @apply px-4 py-[11px] shadow-md;
 }
 
 .btn-sm {
@@ -26,7 +26,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .form-select,
 .form-checkbox,
 .form-radio {
-    @apply border border-gray-200 shadow-xs rounded-lg focus:ring-0 focus:ring-offset-0;
+    @apply border border-gray-200 shadow-sm rounded-lg focus:ring-0 focus:ring-offset-0;
 }
 
 .form-input,
@@ -47,9 +47,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .form-checkbox,
 .form-radio {
-    @apply text-gray-800 checked:bg-blue-500 checked:border-transparent focus-visible:not-checked:border-blue-300;
+    @apply text-gray-800 border-blue-300;
+}
+
+.form-checkbox:checked,
+.form-radio:checked {
+    @apply bg-blue-500 border-transparent;
 }
 
 .form-checkbox {
-    @apply rounded-xs;
+    @apply rounded;
 }

@@ -9,49 +9,61 @@ module.exports = {
     extend: {
       colors: {
         // Colores base para el tema de construcción y maquinaria
-        'acero': {
+        cat: {
+          50: '#fff9e6',
+          100: '#fff2cc',
+          200: '#ffe699',
+          300: '#ffd966',
+          400: '#ffcd33',
+          500: '#ffc000',
+          600: '#cc9a00',
+          700: '#997300',
+          800: '#664d00',
+          900: '#332600',
+        },
+        acero: {
           50: '#f5f7f8',
           100: '#e6eaed',
           200: '#cbd5db',
           300: '#a4b3bd',
           400: '#778a97',
-          500: '#5c6b77', // Color principal - gris acero
+          500: '#5c6b77',
           600: '#4a5661',
           700: '#3d464f',
           800: '#333a41',
           900: '#2c3137',
         },
-        'tierra': {
+        tierra: {
           50: '#f8f6f3',
           100: '#ebe6e0',
           200: '#d7cdc3',
           300: '#bcaea0',
           400: '#a08f7d',
-          500: '#8b7762', // Color principal - tierra natural
+          500: '#8b7762',
           600: '#726251',
           700: '#5e5043',
           800: '#4e4238',
           900: '#423830',
         },
-        'maquinaria': {
+        maquinaria: {
           50: '#f9f7f4',
           100: '#f0e9e2',
           200: '#e1d3c5',
           300: '#cdb7a3',
           400: '#b99b81',
-          500: '#a58466', // Color principal - naranja maquinaria
+          500: '#a58466',
           600: '#8c6d54',
           700: '#745a46',
           800: '#614b3c',
           900: '#523f33',
         },
-        'hormigon': {
+        hormigon: {
           50: '#f7f7f7',
           100: '#e3e3e3',
           200: '#c8c8c8',
           300: '#a4a4a4',
           400: '#818181',
-          500: '#666666', // Color principal - gris hormigón
+          500: '#666666',
           600: '#515151',
           700: '#434343',
           800: '#383838',
@@ -60,5 +72,10 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    {
+      pattern: /(bg|text|border)-(cat|acero|tierra|maquinaria|hormigon)-(50|100|200|300|400|500|600|700|800|900)/,
+    },
+  ],
   plugins: [],
-} 
+}

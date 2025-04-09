@@ -10,13 +10,13 @@ export default function CTA() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                className="btn bg-tierra-500 text-white hover:bg-tierra-600"
+                className="btn bg-cat-500 text-tierra-900 font-bold hover:bg-cat-400"
                 href="#contacto"
               >
                 Solicitar Cotización
               </a>
               <a
-                className="btn bg-white text-tierra-700 border-2 border-tierra-500 hover:bg-tierra-50"
+                className="btn bg-cat-500 text-tierra-900 font-bold hover:bg-cat-400"
                 href="#contacto"
               >
                 Contactar
