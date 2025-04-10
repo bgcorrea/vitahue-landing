@@ -1,10 +1,12 @@
 import Image from "next/image";
+import PageIllustration from "./page-illustration";
 
 export default function Hero() {
   return (
     <section className="relative bg-tierra-50">
+      <PageIllustration />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="py-12 md:py-20">
+        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Hero content */}
           <div className="text-center pb-12 md:pb-16">
             <h1
@@ -29,7 +31,7 @@ export default function Hero() {
                 <div>
                   <a
                     className="btn text-white bg-cat-600 hover:bg-cat-700 w-full mb-4 sm:w-auto sm:mb-0 sm:mr-4"
-                    href="#0"
+                    href="#cotizacion"
                   >
                     Solicitar Cotización
                   </a>
@@ -37,7 +39,7 @@ export default function Hero() {
                 <div>
                   <a
                     className="btn text-white bg-tierra-600 hover:bg-tierra-700 w-full sm:w-auto"
-                    href="#0"
+                    href="#contacto"
                   >
                     Contactar
                   </a>
