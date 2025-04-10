@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        montserrat: ['var(--font-montserrat)'],
+      },
       colors: {
         // Colores base para el tema de construcción y maquinaria
         cat: {

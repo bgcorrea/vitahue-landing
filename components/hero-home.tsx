@@ -9,15 +9,18 @@ export default function Hero() {
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Hero content */}
           <div className="text-center pb-12 md:pb-16">
-            <h1
-              className="mb-6 text-5xl font-bold text-tierra-800 md:text-6xl"
-              data-aos="fade-up"
-            >
-              VITAHUE
-            </h1>
+            <div className="relative inline-block">
+              <div className="absolute -inset-1 bg-gradient-to-r from-cat-500 to-tierra-500 rounded-lg blur opacity-25"></div>
+              <h1
+                className="relative mb-6 font-montserrat text-5xl font-extrabold text-tierra-800 md:text-7xl"
+                data-aos="fade-up"
+              >
+                VITAHUE
+              </h1>
+            </div>
             <div className="max-w-3xl mx-auto">
               <p
-                className="mb-8 text-lg text-tierra-600"
+                className="mb-8 text-xl font-montserrat font-medium text-tierra-600"
                 data-aos="fade-up"
                 data-aos-delay="150"
               >
