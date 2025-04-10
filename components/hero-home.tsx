@@ -1,54 +1,45 @@
 import Image from "next/image";
-import PageIllustration from "@/components/page-illustration";
 
-export default function HeroHome() {
+export default function Hero() {
   return (
     <section className="relative bg-tierra-50">
-      <PageIllustration />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        {/* Hero content */}
-        <div className="pb-12 pt-32 md:pb-20 md:pt-40">
-          {/* Section header */}
-          <div className="pb-12 text-center md:pb-16">
+        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+          {/* Hero content */}
+          <div className="text-center pb-12 md:pb-16">
             <h1
               className="mb-6 text-5xl font-bold text-tierra-800 md:text-6xl"
-              data-aos="zoom-y-out"
-              data-aos-delay={150}
+              data-aos="fade-up"
             >
-              VITAHUE <br className="max-lg:hidden" />
-              Soluciones en Construcción
+              VITAHUE
             </h1>
-            <div className="mx-auto max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <p
                 className="mb-8 text-lg text-tierra-600"
-                data-aos="zoom-y-out"
-                data-aos-delay={300}
+                data-aos="fade-up"
+                data-aos-delay="150"
               >
-                Expertos en áridos, movimiento de tierras y arriendo de maquinaria pesada. 
-                Brindamos soluciones integrales para proyectos de construcción y desarrollo de infraestructura.
+                Soluciones en Construcción
               </p>
-              <div>
-                <div
-                  className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
-                  data-aos="zoom-y-out"
-                  data-aos-delay={450}
-                >
+              <div
+                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div>
                   <a
-                    className="btn group mb-4 w-full bg-cat-500 text-tierra-900 font-bold shadow-lg hover:bg-cat-400 sm:mb-0 sm:w-auto"
-                    href="#servicios"
+                    className="btn text-white bg-cat-600 hover:bg-cat-700 w-full mb-4 sm:w-auto sm:mb-0 sm:mr-4"
+                    href="#0"
                   >
-                    <span className="relative inline-flex items-center">
-                      Nuestros Servicios{" "}
-                      <span className="ml-1 tracking-normal text-tierra-900 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
-                      </span>
-                    </span>
+                    Solicitar Cotización
                   </a>
+                </div>
+                <div>
                   <a
-                    className="btn w-full bg-cat-500 text-tierra-900 font-bold shadow-lg hover:bg-cat-400 sm:ml-4 sm:w-auto"
-                    href="#contacto"
+                    className="btn text-white bg-tierra-600 hover:bg-tierra-700 w-full sm:w-auto"
+                    href="#0"
                   >
-                    Contáctanos
+                    Contactar
                   </a>
                 </div>
               </div>
@@ -56,9 +47,9 @@ export default function HeroHome() {
           </div>
           {/* Hero image */}
           <div
-            className="mx-auto max-w-3xl"
-            data-aos="zoom-y-out"
-            data-aos-delay={600}
+            className="relative max-w-3xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="450"
           >
             <div className="relative aspect-video rounded-2xl bg-acero-900 px-5 py-3 shadow-xl">
               <Image
@@ -67,6 +58,7 @@ export default function HeroHome() {
                 width={1200}
                 height={675}
                 className="rounded-lg"
+                priority
               />
             </div>
           </div>
