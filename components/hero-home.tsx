@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative bg-tierra-50">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+        <div className="py-12 md:py-20">
           {/* Hero content */}
           <div className="text-center pb-12 md:pb-16">
             <h1
