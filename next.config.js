@@ -10,6 +10,9 @@ const nextConfig = {
     ],
   },
   compress: true,
+  async redirects() {
+    return [];
+  },
 };
 
 module.exports = nextConfig;
