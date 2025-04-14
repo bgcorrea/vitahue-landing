@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function CTA() {
   return (
     <section className="bg-tierra-100">
@@ -9,20 +11,20 @@ export default function CTA() {
               Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus objetivos de construcción
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
-                className="btn bg-cat-500 text-tierra-900 font-bold hover:bg-cat-400"
-                href="/#cotizacion"
+              <Link 
+                href="/#cotizacion" 
+                className="btn bg-tierra-600 hover:bg-tierra-700 text-white font-montserrat"
               >
                 Solicitar Cotización
-              </a>
-              <a
-                className="btn bg-cat-500 text-tierra-900 font-bold hover:bg-cat-400"
-                href="https://wa.me/56912345678"
-                target="_blank"
+              </Link>
+              <Link 
+                href="https://wa.me/56975874101" 
+                target="_blank" 
                 rel="noopener noreferrer"
+                className="btn bg-white text-tierra-700 hover:bg-tierra-50 font-montserrat"
               >
                 Contactar
-              </a>
+              </Link>
             </div>
           </div>
         </div>

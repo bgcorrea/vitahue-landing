@@ -109,7 +109,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="cotizacion" className="bg-tierra-50 py-12">
+    <section id="cotizacion" className="bg-tierra-50 py-12 pt-24 sm:pt-28 md:pt-32">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-tierra-900 mb-4">Solicita una Cotización</h2>

@@ -16,8 +16,8 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-tierra-200 tracking-wider uppercase">Contacto</h3>
             <ul className="mt-2 space-y-2">
               <li>
-                <a href="tel:+56912345678" className="text-base text-tierra-200 hover:text-tierra-100">
-                  +56 9 1234 5678
+                <a href="tel:+56975874101" className="text-base text-tierra-200 hover:text-tierra-100">
+                  +56 9 7587 4101
                 </a>
               </li>
               <li>

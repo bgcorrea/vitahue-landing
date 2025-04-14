@@ -58,7 +58,7 @@ export default function ImageCarousel() {
   };
 
   return (
-    <div className="relative aspect-video overflow-hidden">
+    <div className="relative w-full h-full overflow-hidden">
       {/* Contenedor de imágenes */}
       <div className="relative h-full w-full overflow-hidden">
         {isTransitioning ? (
@@ -73,9 +73,9 @@ export default function ImageCarousel() {
               <Image
                 src={images[prevIndex].src}
                 alt={images[prevIndex].alt}
-                width={1200}
-                height={675}
-                className="object-cover w-full h-full"
+                fill
+                sizes="100vw"
+                className="object-cover"
                 priority
               />
             </div>
@@ -90,9 +90,9 @@ export default function ImageCarousel() {
               <Image
                 src={images[getNextIndex()].src}
                 alt={images[getNextIndex()].alt}
-                width={1200}
-                height={675}
-                className="object-cover w-full h-full"
+                fill
+                sizes="100vw"
+                className="object-cover"
                 priority
               />
             </div>
@@ -103,9 +103,9 @@ export default function ImageCarousel() {
             <Image
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}
-              width={1200}
-              height={675}
-              className="object-cover w-full h-full"
+              fill
+              sizes="100vw"
+              className="object-cover"
               priority
             />
           </div>
