@@ -38,9 +38,11 @@ export default function Header() {
     <header 
       className={`fixed top-0 z-30 w-full transition-all duration-700 ease-in-out py-2 ${
         visible 
-          ? 'opacity-100 translate-y-0' 
+          ? 'opacity-100 translate-y-0 pointer-events-auto' 
           : 'opacity-0 -translate-y-20 pointer-events-none'
-      } sm:opacity-100 sm:translate-y-0 sm:pointer-events-auto`}
+      } sm:opacity-100 sm:translate-y-0 sm:pointer-events-auto md:opacity-0 md:-translate-y-20 md:pointer-events-none ${
+        visible ? 'md:opacity-100 md:translate-y-0 md:pointer-events-auto' : ''
+      }`}
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl px-3 transition-all duration-300 bg-transparent">
