@@ -11,13 +11,15 @@ export default function CTA() {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
                 className="btn bg-cat-500 text-tierra-900 font-bold hover:bg-cat-400"
-                href="#contacto"
+                href="/#cotizacion"
               >
                 Solicitar Cotización
               </a>
               <a
                 className="btn bg-cat-500 text-tierra-900 font-bold hover:bg-cat-400"
-                href="#contacto"
+                href="https://wa.me/56912345678"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Contactar
               </a>

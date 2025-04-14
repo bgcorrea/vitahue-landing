@@ -1,36 +1,37 @@
 import Link from "next/link";
+import Logo from './logo';
 
-export default function Footer({ border = false }: { border?: boolean }) {
+export default function Footer() {
   return (
-    <footer className="bg-tierra-100">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className={`py-8 ${border ? "border-t border-tierra-200" : ""}`}>
-          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <div className="text-center sm:text-left">
-              <div className="text-xl font-bold text-tierra-800">VITAHUE</div>
-              <div className="mt-1 text-sm text-tierra-600">
-                Soluciones en Construcción
-              </div>
-            </div>
-            
-            <div className="flex flex-col items-center gap-2 sm:items-end">
-              <div className="text-sm text-tierra-600">
-                <span className="font-medium">Contacto:</span> +56 9 1234 5678
-              </div>
-              <div className="text-sm text-tierra-600">
-                <span className="font-medium">Email:</span> info@vitahue.cl
-              </div>
-              <div className="text-sm text-tierra-600">
-                <span className="font-medium">Dirección:</span> Ruta 5 Sur, Km 123, Santiago
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-8 border-t border-tierra-200 pt-8 text-center">
-            <p className="text-sm text-tierra-600">
-              &copy; {new Date().getFullYear()} Vitahue. Todos los derechos reservados.
+    <footer className="bg-tierra-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="py-6 md:grid md:grid-cols-2 md:gap-8">
+          <div className="space-y-4">
+            <Logo />
+            <p className="text-tierra-200 text-sm">
+              Expertos en áridos, movimiento de tierras y arriendo de maquinaria.
             </p>
           </div>
+          <div className="mt-6 md:mt-0">
+            <h3 className="text-sm font-semibold text-tierra-200 tracking-wider uppercase">Contacto</h3>
+            <ul className="mt-2 space-y-2">
+              <li>
+                <a href="tel:+56912345678" className="text-base text-tierra-200 hover:text-tierra-100">
+                  +56 9 1234 5678
+                </a>
+              </li>
+              <li>
+                <p className="text-base text-tierra-200">
+                  Región Metropolitana
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="mt-4 border-t border-tierra-700 pt-4 text-center">
+          <p className="text-sm text-tierra-200">
+            &copy; {new Date().getFullYear()} Vitahue. Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </footer>
